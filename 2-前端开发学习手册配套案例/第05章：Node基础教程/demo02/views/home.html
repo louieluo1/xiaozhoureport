@@ -1,0 +1,63 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block head %}
+<!-- 引入CSS -->
+{% endblock %}
+
+{% block content %}
+<div class="content">
+  <!-- 学习文档 -->
+  <h2>精选手册</h2>
+  <ul class="list">
+    {% for doc in data.docs %}
+    <li>
+      <div class="icon">
+        <img src="{{doc.icons}}" alt="">
+      </div>
+      <div class="desc">
+        <h3>{{doc.name}}</h3>
+        <div class="date">{{doc.date}}</div>
+        <a href="/docs/{{doc.tag}}">阅读</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <!-- 博客部分 -->
+  <h2>精选博客</h2>
+  <ul class="list">
+    {% for blog in data.blogs.lists %}
+    {%if blog.isChoice %}
+    <li>
+      <div class="icon">
+        <img src="{{blog.icons}}">
+      </div>
+      <div class="desc">
+        <h3>{{blog.title}}</h3>
+        <div class="date">{{blog.date}}</div>
+        <a href="">阅读</a>
+      </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- 视频部分 -->
+  <h2>精选视频</h2>
+  <ul class="list">
+    {% for course in data.videos.courses %}
+    <li>
+      <div class="icon">
+        <img src="{{course.icons}}">
+      </div>
+      <div class="desc">
+        <h3>{{course.title}}</h3>
+        <div class="date">{{course.date}}</div>
+        <a href="">阅读</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+</div>
+{% endblock %}

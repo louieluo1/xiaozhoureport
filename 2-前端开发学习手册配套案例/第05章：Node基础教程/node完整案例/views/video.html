@@ -1,0 +1,21 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block content %}
+<div class="content">
+  <ul class="list">
+    {% for doc in docs %}
+    <li>
+      <div class="icon">
+        <img src="{{doc.icons}}" alt="">
+      </div>
+      <div class="desc border-bottom">
+        <h3>{{doc.name}}</h3>
+        <div class="summary">{{doc.summary}}</div>
+        <div class="date">{{doc.date}}</div>
+        <a href="/docs/{{doc.tag}}">阅读</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

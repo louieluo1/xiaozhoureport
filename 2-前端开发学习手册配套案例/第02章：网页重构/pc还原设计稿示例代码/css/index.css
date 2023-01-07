@@ -1,0 +1,331 @@
+/* 样式格式化 */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 用于清除浮动 */
+
+.clear::before,
+.clear::after {
+    content: "";
+    display: block;
+    /*将伪元素增加的内容设置成块元素*/
+    clear: both;
+}
+
+
+/* 头部 header 制作   start */
+
+.header {
+    height: 60px;
+    background-color: #fff;
+}
+
+.header_content {
+    position: relative;
+}
+
+
+/* logo 标志  */
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+
+/* nav 导航  */
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+.nav .active {
+    border-bottom: 2px solid #0084ff;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: inline-block;
+    width: 115px;
+    height: 58px;
+    /* 文字水平居中垂直居中 */
+    text-align: center;
+    line-height: 58px;
+    color: black;
+}
+
+.nav ul li:hover {
+    border-bottom: 2px solid #0084ff;
+}
+
+
+/* search */
+
+.search {
+    position: absolute;
+    right: 140px;
+    top: 10px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+
+/* login */
+
+.login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 130px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #0084ff;
+    border-radius: 0 0 30px 30px;
+    color: #fff;
+}
+
+
+/* 头部 header 制作   end */
+
+
+/* main  主体模块制作 start */
+
+.main {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main .content {
+    float: left;
+    width: 956px;
+}
+
+.main .aside {
+    float: right;
+    width: 290px;
+    background-color: #fff;
+}
+
+
+/* 内容 content start*/
+
+.content .title {
+    padding: 10px 25px;
+    margin: 0 0 15px 0;
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.content .title span {
+    float: right;
+    font-size: 16px;
+    color: #a7a7a7;
+    line-height: 35px;
+}
+
+
+/* 产品列表 product_items */
+
+.product_items li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.product_items img {
+    float: left;
+}
+
+.product_items .info {
+    float: left;
+    margin-left: 30px;
+}
+
+.product_items .info h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.product_items .info p {
+    color: #ccc;
+    line-height: 60px;
+}
+
+.product_items .info a {
+    display: block;
+    width: 90px;
+    height: 40px;
+    background-color: #e3f0fc;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: #0084ff;
+}
+
+.content .footer {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #808080;
+    font-size: 12px;
+    margin-top: 8px
+}
+
+
+/* 内容 content end */
+
+
+/* 边栏 aside   start */
+
+
+/* 轮播图 swiper */
+
+.swiper-container {
+    width: 290px;
+    height: 200px;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 精选模块 account */
+
+.aside .account {
+    padding: 10px 10px 0 10px;
+}
+
+.aside .account h3 {
+    line-height: 49px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+}
+
+.aside .account .book1 {
+    height: 110px;
+    border-top: 1px solid #bcbcbc;
+}
+
+.aside .account .book1 img {
+    width: 75px;
+    height: 85px;
+    margin-top: 15px;
+    float: left;
+}
+
+.aside .account .book1 .book_info {
+    float: left;
+    margin: 25px 0 0 15px;
+}
+
+.aside .account .book1 .book_info a {
+    display: block;
+    color: #3995ff;
+    background-color: #e3f0fc;
+    width: 60px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.account .account_content {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    color: black;
+    line-height: 45px;
+    border-top: 1px solid #bcbcbc;
+}
+
+.copyright {
+    width: 280px;
+    margin-left: -10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f6f6f6;
+}
+
+.copyright li {
+    color: #b4b4b4;
+    height: 30px;
+}
+
+.copyright li a {
+    color: #b4b4b4;
+}
+
+
+/* 边栏 aside   end */
+
+
+/* main  主体模块制作 end */
+
+
+/* hyperlink */
+
+.hyperlink {
+    z-index: 999;
+    position: fixed;
+    width: 41px;
+    right: 2%;
+    bottom: 6%;
+}
+
+.hyperlink li {
+    line-height: 50px;
+}
+
+.hyperlink li img {
+    width: 30px;
+}

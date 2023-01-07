@@ -1,0 +1,24 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block content %}
+<div class="content">
+  <ul class="list">
+    <!-- 没有设置ID，先用title测试 -->
+    {% for blog in blogs.lists %}
+    <a href="/blogs/blog?title={{blog.title}}">
+      <li class="blog-item">
+        <div class="icon">
+          <img src="{{blog.icons}}" alt="">
+        </div>
+        <div class="desc border-bottom">
+
+          <h3>{{blog.title}}</h3>
+          <div class="summary">{{blog.contents}}</div>
+
+        </div>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

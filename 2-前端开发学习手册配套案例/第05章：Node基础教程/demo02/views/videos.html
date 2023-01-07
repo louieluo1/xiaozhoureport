@@ -1,0 +1,23 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block content %}
+<div class="content">
+  <ul class="list">
+    {% for video in videos.courses %}
+    <li>
+      <div class="icon">
+        <img src="{{video.icons}}" alt="">
+      </div>
+      <div class="desc border-bottom">
+        <h3>{{video.title}}</h3>
+        <div class="summary">{{video.summary}}</div>
+        <div class="date">{{video.date}}</div>
+
+        <!-- 视频详情页没有写 -->
+        <a href="/videos/{{video.tag}}">观看</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //如果用户名为admin，密码为123456，提示登录成功，否则登录失败。
+
+
+        function checkLogin(username,password){
+            if(username === "admin" && password === "123456"){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        var result = checkLogin("admin","1234567")
+
+        if(result){
+            console.log("登录成功")
+        }else{
+            console.log("登录失败")
+        }
+
+    </script>
+</body>
+</html>

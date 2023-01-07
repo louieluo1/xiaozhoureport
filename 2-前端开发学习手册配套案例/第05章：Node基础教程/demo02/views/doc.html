@@ -1,0 +1,28 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block content %}
+<div class="content" id="doc">
+  <aside>
+    <div class="icon">
+      <img src="{{doc.icons}}" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        {% for item in doc.lists %}
+        <li>
+          <a href="/docs/{{doc.tag}}?title={{item.title}}">{{item.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+  <!-- 这里暂时只显示第一个 -->
+  <div class="detail">
+    <h3>{{doc.lists[0].title}}</h3>
+    <hr>
+    <div class="info">
+      {{doc.lists[0].contents}}
+    </div>
+  </div>
+</div>
+{% endblock %}

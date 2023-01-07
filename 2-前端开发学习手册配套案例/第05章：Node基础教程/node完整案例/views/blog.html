@@ -1,0 +1,13 @@
+{% extends "./views/layouts/layout.html" %}
+
+{% block content %}
+<div class="content">
+  <div class="detail">
+    <h3>{{blog.title}}</h3>
+    <hr>
+    <div class="info">
+      {{blog.contents}}
+    </div>
+  </div>
+</div>
+{% endblock %}

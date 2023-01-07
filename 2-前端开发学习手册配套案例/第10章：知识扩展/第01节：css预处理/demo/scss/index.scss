@@ -1,0 +1,33 @@
+$bgc:yellow;
+$textColor:blue;
+*{
+    margin:0px;
+    padding:0px;
+}
+.header{
+    background-color: $bgc;
+    height:80px;
+    width:1000px;
+    margin:0 auto;
+    .title{
+        color:$textColor;
+    }
+}
+.container{
+    background-color: $bgc;
+    height:500px;
+    width:1000px;
+    margin:0 auto;
+    .title{
+        color:$textColor;
+    }
+}
+.footer{
+    background-color: $bgc;
+    height:80px;
+    width:1000px;
+    margin:0 auto;
+    .title{
+        color:$textColor;
+    }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/fontsizeset.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/放大镜.png" alt="">
+        <input type="text" placeholder="请输入搜索内容">
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/java图.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/go.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/git.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/php.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/python.png" alt="">
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <div class="vip">
+        <span>VIP会员</span>
+        <a href="#">立即成为VIP</a>
+    </div>
+    <div class="main">
+        <div class="data">
+            <div class="title">
+                <h2>精选手册</h2>
+                <a href="#" class="more">查看更多 ></a>
+            </div>
+            <div class="list">
+                <a href="#">
+                    <div class="datapic">
+                        <img src="img/前端图.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>前端开发手册</h3>
+                        <p>2019年11月3日</p>
+                    </div>
+                    <div class="btn">
+                        <div class="enter">进入</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="datapic">
+                        <img src="img/java图.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>java学习手册</h3>
+                        <p>2019年11月3日</p>
+                    </div>
+                    <div class="btn">
+                        <div class="enter">进入</div>
+                    </div>
+                </a>
+            </div>
+            <div class="br">
+            </div>
+
+            <div class="title">
+                <h2>精选博客</h2>
+                <a href="#" class="more">查看更多 ></a>
+            </div>
+            <div class="list">
+                <a href="#">
+                    <div class="datapic">
+                        <img src="img/博客图.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>前端开发手册</h3>
+                        <p>2019年11月3日</p>
+                    </div>
+                    <div class="btn">
+                        <div class="enter">进入</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="br">
+
+            </div>
+            <div class="title">
+                <h2>精选视频</h2>
+                <a href="#" class="more">查看更多 ></a>
+            </div>
+            <div class="list">
+                <a href="#">
+                    <div class="datapic">
+                        <img src="img/前端图.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>前端开发手册</h3>
+                        <p>2019年11月3日</p>
+                    </div>
+                    <div class="btn">
+                        <div class="enter">进入</div>
+                    </div>
+                </a>
+                <div class="br">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>
+                <a href="#">晓舟报告</a>
+                <span>|</span>
+                <a href="#">团队介绍</a>
+            </p>
+            <p class="link">
+                晓舟报告官方网站©2019 冀ICP备18023262号-4
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="menu">
+        <ul class="menu-list">
+            <li>
+                <a href="#" class="active">
+                    <img src="img/首页bu.png" alt="">
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/手册.png" alt="">
+                    <p>手册</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/博客.png" alt="">
+                    <p>博客</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/图层1.png" alt="">
+                    <p>视频</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/我的.png" alt="">
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="return">
+        <img src="img/返回顶部.png" alt="">
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

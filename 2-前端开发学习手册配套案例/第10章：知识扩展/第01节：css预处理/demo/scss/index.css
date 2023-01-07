@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: yellow;
+  height: 80px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.header .title {
+  color: blue;
+}
+
+.container {
+  background-color: yellow;
+  height: 500px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .title {
+  color: blue;
+}
+
+.footer {
+  background-color: yellow;
+  height: 80px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer .title {
+  color: blue;
+}
+
+/*# sourceMappingURL=index.css.map */
